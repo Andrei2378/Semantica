@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <style>
+        form {
+            display: grid;
+            grid-template-areas:
+                "a a a"
+                "c c c"
+                "d e f"
+                "g g g";
+            grid-template-rows: 130px 60px auto 60px;
+            grid-template-columns: 1fr 4fr 1fr;
+        }
+
+        .cabecera {
+            grid-area: a;
+        }
+
+        .menu {
+            grid-area: c;
+        }
+
+        .izquierda {
+            grid-area: d;
+        }
+
+        .centro {
+            grid-area: e;
+        }
+
+        .derecha {
+            grid-area: f;
+        }
+
+        .pie {
+            grid-area: g;
+        }
+
+
+
+        li {
+            display: inline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form>
+        <header class="cabecera">
+            <div>
+                <!-- Logo y TITULO-->
+                <h1>Plantilla semántica</h1>
+            </div>
+
+        </header>
+        <nav class="menu">
+            <ul>
+                <li><input type="button" value="Opcion1"></input></li>
+                <li><input type="button" value="Opcion2"></input></li>
+                <li><input type="button" value="Opcion3"></input></li>
+                <li><input type="button" value="Opcion4"></input></li>
+            </ul>
+        </nav>
+        <section>
+
+            <article class="izquierda">
+                <header>
+                    <h3>Ciclos</h3>
+                </header>
+                <pre>
+                    Esto es un
+                    texto que 
+                    se visuliza en 
+                </pre>
+                <footer>
+                    <i>CIFP Santa Catalina</i>
+                </footer>
+            </article>
+
+            <article class="centro">
+                <ul>
+                    <li>Desarrollo de Apliciones Web</li>
+                    <li>Sistemas micoinformaticos y redes</li>
+                    <li>Otros</li>
+                </ul>
+            </article>
+        </section>
+        <aside class="derecha">
+            <textarea cols="10" rows="10"> Ayuda sobre los ciclos</textarea>
+        </aside>
+        <footer class="pie">
+            <b>CIFP SANTA CATALINA ARANDA DE DUERO</b>
+        </footer>
+    </form>
+</body>
+
+</html>
